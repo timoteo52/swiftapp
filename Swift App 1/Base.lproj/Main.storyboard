@@ -37,6 +37,22 @@
                                     <action selector="button2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UyR-lS-aim"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4c-RA-M7T">
+                                <rect key="frame" x="250.5" y="514" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3Cu-vo-gf4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-5g-Rt7">
+                                <rect key="frame" x="250" y="463" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Q2-0n-DLD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -44,10 +60,14 @@
                             <constraint firstItem="0ER-Wy-dNe" firstAttribute="top" secondItem="xje-xq-dbW" secondAttribute="bottom" constant="75.5" id="6Nr-8C-B9Y"/>
                             <constraint firstItem="xje-xq-dbW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="77I-Xh-MU9"/>
                             <constraint firstItem="0ER-Wy-dNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gmw-UX-XxQ"/>
+                            <constraint firstItem="h9a-5g-Rt7" firstAttribute="top" secondItem="wg0-XT-efU" secondAttribute="bottom" constant="38" id="Gnl-Wy-jRB"/>
+                            <constraint firstItem="Q4c-RA-M7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J1y-rv-0hN"/>
                             <constraint firstItem="xje-xq-dbW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Na9-Yw-DaZ"/>
                             <constraint firstItem="xje-xq-dbW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yte-kj-pbs"/>
                             <constraint firstItem="xje-xq-dbW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="hds-QX-pXj"/>
+                            <constraint firstItem="h9a-5g-Rt7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jXm-5U-Z01"/>
                             <constraint firstItem="wg0-XT-efU" firstAttribute="top" secondItem="0ER-Wy-dNe" secondAttribute="bottom" constant="42" id="pFv-kg-Xd7"/>
+                            <constraint firstItem="Q4c-RA-M7T" firstAttribute="top" secondItem="h9a-5g-Rt7" secondAttribute="bottom" constant="21" id="pI5-a4-roz"/>
                             <constraint firstItem="wg0-XT-efU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sQF-wp-V71"/>
                         </constraints>
                         <variation key="default">
@@ -58,6 +78,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="h9a-5g-Rt7" id="Ysm-Gw-Bem"/>
+                        <outlet property="text2" destination="Q4c-RA-M7T" id="zz9-Pt-kTY"/>
                         <outlet property="theLabel" destination="xje-xq-dbW" id="0m8-YJ-imA"/>
                     </connections>
                 </viewController>
